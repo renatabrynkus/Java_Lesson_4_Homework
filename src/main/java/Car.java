@@ -16,10 +16,6 @@ public class Car {
         this.dimensions = dimensions;
     }
 
-    public Car() {
-
-    }
-
     public boolean isAutomaticGear() {
         return isAutomaticGear;
     }
