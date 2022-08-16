@@ -24,20 +24,8 @@ public class Car {
         return market;
     }
 
-    public String getSegment() {
-        return segment;
-    }
-
-    public ArrayList<Dimension> getDimensions() {
-        return dimensions;
-    }
-
     public Producer getProducer() {
         return producer;
-    }
-
-    public void setDimensions(ArrayList<Dimension> dimensions) {
-        this.dimensions = dimensions;
     }
 
     @Override
