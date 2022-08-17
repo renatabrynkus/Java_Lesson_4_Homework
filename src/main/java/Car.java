@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class Car {
@@ -18,11 +17,9 @@ public class Car {
         this.segment = segment;
         this.dimensions = dimensions;
     }
-
     public Car() {
 
     }
-
     public boolean isAutomaticGear() {
         return isAutomaticGear;
     }

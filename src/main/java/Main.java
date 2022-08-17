@@ -102,7 +102,7 @@ public class Main {
         allCars.add(car14);
         allCars.add(car15);
 
-        car3.printCountries(allCars, "BMW", true);
-    }
+        car1.printCountries(allCars, "BMW", true);
 
+    }
 }
