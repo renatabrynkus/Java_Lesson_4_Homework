@@ -50,8 +50,6 @@ public class Main {
         dimensionsTrunkOver300.add(new Dimension(162, 111, 550));
         dimensionsTrunkOver300.add(new Dimension(162, 110, 315));
 
-
-
         ArrayList<Dimension> dimensionsTrunkEqualOrBelow300 = new ArrayList<>();
         dimensionsTrunkEqualOrBelow300.add(new Dimension(148, 119, 44));
         dimensionsTrunkEqualOrBelow300.add(new Dimension(170, 122, 120));

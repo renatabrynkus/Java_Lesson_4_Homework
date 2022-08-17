@@ -10,6 +10,6 @@ public class Country {
 
     @Override
     public String toString() {
-        return "Country Name is " + countryName + " and country sign is " + countrySign;
+        return countryName + " - " + countrySign;
     }
 }
