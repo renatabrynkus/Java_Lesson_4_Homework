@@ -8,6 +8,14 @@ public class Country {
         this.countrySign = countrySign;
     }
 
+    public String getCountryName() {
+        return countryName;
+    }
+
+    public char getCountrySign() {
+        return countrySign;
+    }
+
     @Override
     public String toString() {
         return countryName + " - " + countrySign;

@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class Car {
 
@@ -28,6 +31,10 @@ public class Car {
         return producer;
     }
 
+    public ArrayList<Dimension> getDimensions() {
+        return dimensions;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
@@ -40,12 +47,21 @@ public class Car {
     }
 
     public void printAutomaticBMW(ArrayList<Car> allCars) {
-        for (Car car : allCars
-        ) {
+        Set<String> countrySet = new HashSet<>();
+
+        for (Car car : allCars) {
             if ((car.getProducer().getModel().equals("BMW")) && (car.isAutomaticGear())) {
-                    System.out.println(car.getMarket().getCountries());
+                for (int i = 0; i < dimensions.size(); i++) //size 10
+                    if (car.getDimensions().get(i).getTrunkCapacity() > 300) {
+                        for (int j = 0; j < car.getMarket().getCountries().size(); j++) { //size listy krajów
+                            countrySet.add((car.getMarket().getCountries().get(j).toString()));
+                        }
+                    }
             }
         }
+        System.out.println(countrySet);
     }
 }
+
+
 

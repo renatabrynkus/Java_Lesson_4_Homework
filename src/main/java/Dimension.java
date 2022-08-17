@@ -10,10 +10,6 @@ public class Dimension {
         this.trunkCapacity = trunkCapacity;
     }
 
-    public void setTrunkCapacity(int trunkCapacity) {
-        this.trunkCapacity = trunkCapacity;
-    }
-
     public int getTrunkCapacity() {
         return trunkCapacity;
     }
