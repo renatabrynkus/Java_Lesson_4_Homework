@@ -47,13 +47,13 @@ public class Car {
                 '}';
     }
 
-    public void printCountries(ArrayList<Car> allCars, String model, boolean isAutomaticGear) {
+    public void printCountries(ArrayList<Car> allCars, String model, boolean isAutomaticGear, int trunkCapacity) {
         Set<String> countrySet = new HashSet<>();
 
         for (Car car : allCars) {
             if ((car.getProducer().getModel().equals(model)) && (isAutomaticGear == car.isAutomaticGear())) {
                 for (int i = 0; i < dimensions.size(); i++) {
-                    if (car.getDimensions().get(i).getTrunkCapacity() > 300) {
+                    if (car.getDimensions().get(i).getTrunkCapacity() > trunkCapacity) {
                         for (int j = 0; j < car.getMarket().getCountries().size(); j++) {
                             countrySet.add((car.getMarket().getCountries()).get(j).toString());
                         }
