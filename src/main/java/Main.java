@@ -47,17 +47,21 @@ public class Main {
         Market taxi = new Market("Taxi", countriesTaxi);
         Market bus = new Market("Bus", countriesBus);
 
-        ArrayList<Dimension> dimensions = new ArrayList<>();
-        dimensions.add(new Dimension(200, 300, 400));
-        dimensions.add(new Dimension(151, 113, 350));
-        dimensions.add(new Dimension(168, 148, 400));
-        dimensions.add(new Dimension(144, 115, 366));
-        dimensions.add(new Dimension(200, 166, 321));
-        dimensions.add(new Dimension(162, 111, 250));
-        dimensions.add(new Dimension(162, 110, 215));
-        dimensions.add(new Dimension(148, 119, 44));
-        dimensions.add(new Dimension(170, 122, 120));
-        dimensions.add(new Dimension(196, 157, 97));
+        ArrayList<Dimension> dimensionsSmall = new ArrayList<>();
+        dimensionsSmall.add(new Dimension(148, 119, 44));
+        dimensionsSmall.add(new Dimension(170, 122, 120));
+        dimensionsSmall.add(new Dimension(196, 157, 97));
+
+        ArrayList<Dimension> dimensionsMedium = new ArrayList<>();
+        dimensionsMedium.add(new Dimension(151, 113, 350));
+        dimensionsMedium.add(new Dimension(101, 166, 321));
+        dimensionsMedium.add(new Dimension(162, 111, 250));
+        dimensionsMedium.add(new Dimension(162, 110, 215));
+
+        ArrayList<Dimension> dimensionsLarge = new ArrayList<>();
+        dimensionsLarge.add(new Dimension(200, 300, 400));
+        dimensionsLarge.add(new Dimension(199, 177, 420));
+        dimensionsLarge.add(new Dimension(144, 115, 366));
 
         Producer bmwX6 = new Producer("BMW", "X6");
         Producer astonMartinDBR22 = new Producer("Aston Martin", "DBR22");
@@ -69,21 +73,21 @@ public class Main {
         Producer audiA4 = new Producer("Audi", "A4");
         Producer bmw600 = new Producer("BMW", "600");
 
-        Car car1 = new Car(bmwX6, true, business, "premium", dimensions);
-        Car car2 = new Car(bmw600, false, taxi, "standard", dimensions);
-        Car car3 = new Car(astonMartinDBR22, true, business, "premium", dimensions);
-        Car car4 = new Car(citroenC4Cactus, true, transport, "medium", dimensions);
-        Car car5 = new Car(audiA4, false, bus, "standard", dimensions);
-        Car car6 = new Car(bmwX6, false, business, "premium", dimensions);
-        Car car7 = new Car(bmwZ1, true, cargo, "medium", dimensions);
-        Car car8 = new Car(bmwX5, true, business, "standard", dimensions);
-        Car car9 = new Car(bmwX4, false, taxi, "medium", dimensions);
-        Car car10 = new Car(hyundaiTucson, true, transport, "standard", dimensions);
-        Car car11 = new Car(bmwX5, false, taxi, "medium", dimensions);
-        Car car12 = new Car(citroenC4Cactus, false, bus, "standard", dimensions);
-        Car car13 = new Car(hyundaiTucson, false, business, "premium", dimensions);
-        Car car14 = new Car(bmw600, true, cargo, "standard", dimensions);
-        Car car15 = new Car(audiA4, false, business, "medium", dimensions);
+        Car car1 = new Car(bmwX6, true, business, "premium", dimensionsLarge);
+        Car car2 = new Car(bmw600, false, taxi, "standard", dimensionsSmall);
+        Car car3 = new Car(astonMartinDBR22, true, business, "premium", dimensionsSmall);
+        Car car4 = new Car(citroenC4Cactus, true, transport, "medium", dimensionsMedium);
+        Car car5 = new Car(audiA4, false, bus, "standard", dimensionsLarge);
+        Car car6 = new Car(bmwX6, false, business, "premium", dimensionsMedium);
+        Car car7 = new Car(bmwZ1, true, cargo, "medium", dimensionsMedium);
+        Car car8 = new Car(bmwX5, true, business, "standard", dimensionsSmall);
+        Car car9 = new Car(bmwX4, false, taxi, "medium", dimensionsMedium);
+        Car car10 = new Car(hyundaiTucson, true, transport, "standard", dimensionsLarge);
+        Car car11 = new Car(bmwX5, false, taxi, "medium", dimensionsSmall);
+        Car car12 = new Car(citroenC4Cactus, false, bus, "standard", dimensionsMedium);
+        Car car13 = new Car(hyundaiTucson, false, business, "premium", dimensionsLarge);
+        Car car14 = new Car(bmw600, true, cargo, "standard", dimensionsMedium);
+        Car car15 = new Car(audiA4, false, business, "medium", dimensionsSmall);
 
         ArrayList<Car> allCars = new ArrayList<>();
         allCars.add(car1);
