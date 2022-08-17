@@ -13,29 +13,29 @@ public class Main {
         Country brazil = new Country("Brazil", 'B');
         Country france = new Country("France", 'F');
 
-        ArrayList<Country> countriesBusiness = new ArrayList<Country>();
+        ArrayList<Country> countriesBusiness = new ArrayList<>();
         countriesBusiness.add(poland);
         countriesBusiness.add(germany);
         countriesBusiness.add(sweden);
         countriesBusiness.add(uruguay);
         countriesBusiness.add(brazil);
 
-        ArrayList<Country> countriesCargo = new ArrayList<Country>();
+        ArrayList<Country> countriesCargo = new ArrayList<>();
         countriesCargo.add(germany);
         countriesCargo.add(china);
         countriesCargo.add(sweden);
 
-        ArrayList<Country> countriesTransport = new ArrayList<Country>();
+        ArrayList<Country> countriesTransport = new ArrayList<>();
         countriesTransport.add(poland);
         countriesTransport.add(austria);
         countriesTransport.add(sweden);
 
-        ArrayList<Country> countriesTaxi = new ArrayList<Country>();
+        ArrayList<Country> countriesTaxi = new ArrayList<>();
         countriesTaxi.add(germany);
         countriesTaxi.add(china);
         countriesTaxi.add(austria);
 
-        ArrayList<Country> countriesBus = new ArrayList<Country>();
+        ArrayList<Country> countriesBus = new ArrayList<>();
         countriesBus.add(china);
         countriesBus.add(austria);
         countriesBus.add(sweden);
