@@ -17,9 +17,7 @@ public class Car {
         this.segment = segment;
         this.dimensions = dimensions;
     }
-    public Car() {
 
-    }
     public boolean isAutomaticGear() {
         return isAutomaticGear;
     }
@@ -62,6 +60,9 @@ public class Car {
             }
         }
         System.out.println(countrySet);
+        if (countrySet.size() == 0) {
+            System.out.println("Sorry, the list is empty.");
+        }
     }
 }
 
